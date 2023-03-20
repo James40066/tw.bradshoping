@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <context-param>
+    <param-name>ProductPhotoPath</param-name>
+    <param-value>C:/bradshoping/productPhoto/</param-value>
+  </context-param>
+  <context-param>
+    <param-name>viewPath</param-name>
+    <param-value>C:/Users/Shin/Desktop/PS/javaEEt/WebContent/views</param-value>
+  </context-param>
+    <context-param>
+    <param-name>ngrok</param-name>
+    <param-value>https://2a7c0d12.ngrok.io/</param-value>
+  </context-param>
+      <context-param>
+    <param-name>uploadPath</param-name>
+    <param-value>C:/bradshoping/</param-value>
+  </context-param>
+</web-app>

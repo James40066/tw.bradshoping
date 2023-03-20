@@ -1,0 +1,47 @@
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(CSS/login/images/bg-01.jpg);">
+				</div>
+				<!-- required -->
+				<form class="login100-form validate-form" action="loginM" method="post" name="form2">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">帳號</span>
+						<input class="input100" type="email" name="account" id="input1" placeholder="請輸入電子信箱" required
+							autocomplete="off">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+						<span class="label-input100">密碼</span>
+						<input class="input100" type="password" name="password" id="input2" placeholder="請輸入密碼"
+							autocomplete="off" required>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit" >
+							 登入
+						</button>
+						<button class="login100-form-btn" type="button" onclick="location.href='registered.jsp'">
+							註冊
+						</button>
+						<button class="login100-form-btn" type="button" onclick="location.href='sendemailresetpws.jsp'">
+                                                                        忘記密碼
+                        </button>
+                        <button class="login100-form-btn login100-form-btnback" type="button" onclick="location.href='index.jsp'">
+                                                                       回上一頁
+                        </button>
+					</div>
+					<div class="container-login100-form-btn">
+						<div id="GLogin" class="g-signin2" style="margin:10px" data-color="" data-onsuccess="onSignIn"></div>
+						<div id="FbLogin" class="fb-login-button" style="margin:10px" data-width="" data-size="medium" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" scope="public_profile,email" onlogin="checkLoginState();"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<form action='loginM' method='post' id='form1'
+		style='display: none'>
+		<input type='hidden' id='input'>
+	</form>
